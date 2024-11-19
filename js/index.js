@@ -32,4 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   searchButton.addEventListener("click", handleSearch);
+
+  // Add event listeners to category buttons and redirect to products.html with the category parameter
 });
