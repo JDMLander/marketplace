@@ -9,18 +9,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/products.css" />
     <link rel="icon" type="image/svg+xml" href="assets/scroll-solid (2).svg" />
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo">JDM Textbook Marketplace</div>
+        <div class="logo">
+          <a href="index.html">JDM Textbook Marketplace</a>
+        </div>
         <ul class="nav-links">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="#">SEARCH</a></li>
+          <li><a href="products.html">SEARCH</a></li>
           <li><a href="listing.html">SELL</a></li>
-          <li><a href="userLogin.html">LOGIN</a></li>
-          <li><a href="#" class="btn btn-register">REGISTER</a></li>
+          <li><a href="userLogin.html" class="btn btn-register">SIGN IN</a></li>
         </ul>
       </nav>
     </header>
@@ -28,47 +29,77 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1>Welcome to JDM Textbook Market!</h1>
-          <p>Buy and sell pre-approved college textbooks</p>
-          <a href="#" class="btn btn-primary">Get Started</a>
+          <h1>Find your college textbooks</h1>
+          <p>Start saving with pre-approved items!</p>
+          <div class="search-bar">
+            <input type="text" placeholder="Search by title, author, or ISBN" />
+            <button class="btn btn-search">Search</button>
+          </div>
         </div>
       </section>
 
       <section class="featured-listings container">
         <h2>Featured Listings</h2>
         <div class="listings-grid">
-          <div class="listing-card">
-            <img src="../assets/images/intro-e-comm.webp" alt="Book 1" />
-            <h3>Introduction to E-commerce</h3>
-            <p>By Daniel Prieto</p>
-            <p class="price">$45.00</p>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="../assets/images/org-chem.jpeg"
+                alt="Organic Chemistry book"
+              />
+              <span class="condition">New</span>
+            </div>
+            <div class="product-info">
+              <h3>Organic Chemistry</h3>
+              <p class="author">By Joaquin Villegas</p>
+              <p class="edition">8th Edition, 2024</p>
+              <div class="product-meta">
+                <p class="price">$85.00</p>
+                <p class="location">Los Angeles, CA</p>
+              </div>
+              <button class="btn btn-contact">Contact Seller</button>
+            </div>
           </div>
-          <div class="listing-card">
-            <img src="../assets/images/intro-to-cs.jpeg" alt="Book 2" />
-            <h3>Introduction to Computer Science</h3>
-            <p>by Michael Nastro</p>
-            <p class="price">$45.00</p>
-          </div>
-          <div class="listing-card">
-            <img src="../assets/images/org-chem.jpeg" alt="Book 3" />
-            <h3>Organic Chemistry</h3>
-            <p>By Joaquin Villegas</p>
-            <p class="price">$45.00</p>
-          </div>
-        </div>
-      </section>
 
-      <section class="search">
-        <div class="container">
-          <h2>Find Your Textbooks</h2>
-          <form class="search-form">
-            <input
-              type="text"
-              placeholder="Search by title, author, or ISBN"
-              aria-label="Search textbooks"
-            />
-            <button type="submit" class="btn btn-primary">Search</button>
-          </form>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="../assets/images/intro-to-cs.jpeg"
+                alt="Introduction to Computer Science book"
+              />
+              <span class="condition">Good</span>
+            </div>
+            <div class="product-info">
+              <h3>Introduction to Computer Science</h3>
+              <p class="author">by Michael Nastro</p>
+              <p class="edition">3rd Edition, 2022</p>
+              <div class="product-meta">
+                <p class="price">$35.00</p>
+                <p class="location">Boston, MA</p>
+              </div>
+              <button class="btn btn-contact">Contact Seller</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="../assets/images/intro-e-comm.webp"
+                alt="Introduction to E-commerce book"
+              />
+              <span class="condition">Like New</span>
+            </div>
+            <div class="product-info">
+              <h3>Introduction to E-commerce</h3>
+              <p class="author">By Daniel Prieto</p>
+              <p class="edition">5th Edition, 2023</p>
+              <div class="product-meta">
+                <p class="price">$45.00</p>
+                <p class="location">New York, NY</p>
+              </div>
+              <button class="btn btn-contact">Contact Seller</button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -87,6 +118,27 @@
           <a href="#" class="category-card">
             <h3>History</h3>
           </a>
+        </div>
+      </section>
+
+      <section class="how-it-works container">
+        <h2>How It Works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-icon">1</div>
+            <h3>List Your Book</h3>
+            <p>Create a listing with photos and details of your textbook</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">2</div>
+            <h3>Get Approved</h3>
+            <p>Our admins review your listing to ensure quality</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">3</div>
+            <h3>Connect & Sell</h3>
+            <p>Connect with buyers and complete the sale</p>
+          </div>
         </div>
       </section>
     </main>
@@ -118,5 +170,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/index.js" defer></script>
   </body>
 </html>

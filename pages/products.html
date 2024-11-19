@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - JDM Textbook Marketplace</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/scroll-solid (2).svg" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">JDM Textbook Marketplace</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="products.html">SEARCH</a></li>
+          <li><a href="listing.html">SELL</a></li>
+          <li><a href="userLogin.html" class="btn btn-register">SIGN IN</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="products-header container">
+        <h1>Available Textbooks</h1>
+        <div class="filters">
+          <div class="search-bar">
+            <input type="text" placeholder="Search by title, author, or ISBN" />
+            <button class="btn btn-search">Search</button>
+          </div>
+          <div class="filter-options">
+            <select class="filter-select">
+              <option value="">Subject</option>
+              <option value="Science">Science</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="Literature">Literature</option>
+              <option value="History">History</option>
+            </select>
+            <select class="filter-select">
+              <option value="">Price Range</option>
+              <option value="0-25">$0 - $25</option>
+              <option value="25-50">$25 - $50</option>
+              <option value="50-100">$50 - $100</option>
+              <option value="100+">$100+</option>
+            </select>
+            <select class="filter-select">
+              <option value="">Condition</option>
+              <option value="New">New</option>
+              <option value="Like New">Like New</option>
+              <option value="Good">Good</option>
+              <option value="Fair">Fair</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-grid container">
+        <!--
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../assets/images/intro-e-comm.webp" alt="Introduction to E-commerce book" />
+            <span class="condition">Like New</span>
+          </div>
+          <div class="product-info">
+            <h3>Introduction to E-commerce</h3>
+            <p class="author">By Daniel Prieto</p>
+            <p class="edition">5th Edition, 2023</p>
+            <div class="product-meta">
+              <p class="price">$45.00</p>
+              <p class="location">New York, NY</p>
+            </div>
+            <button class="btn btn-contact">Contact Seller</button>
+          </div>
+        </div>
+
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../assets/images/intro-to-cs.jpeg" alt="Introduction to Computer Science book" />
+            <span class="condition">Good</span>
+          </div>
+          <div class="product-info">
+            <h3>Introduction to Computer Science</h3>
+            <p class="author">by Michael Nastro</p>
+            <p class="edition">3rd Edition, 2022</p>
+            <div class="product-meta">
+              <p class="price">$35.00</p>
+              <p class="location">Boston, MA</p>
+            </div>
+            <button class="btn btn-contact">Contact Seller</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../assets/images/org-chem.jpeg" alt="Organic Chemistry book" />
+            <span class="condition">New</span>
+          </div>
+          <div class="product-info">
+            <h3>Organic Chemistry</h3>
+            <p class="author">By Joaquin Villegas</p>
+            <p class="edition">8th Edition, 2024</p>
+            <div class="product-meta">
+              <p class="price">$85.00</p>
+              <p class="location">Los Angeles, CA</p>
+            </div>
+            <button class="btn btn-contact">Contact Seller</button>
+          </div>
+        </div>
+        -->
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>JDM Textbook Market</h3>
+            <p>Buy and sell college textbooks.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Search</a></li>
+              <li><a href="#">Sell</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: support@jdmtextbook.com</p>
+            <p>Phone: (123) 456-7890</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 JDM Textbook Market. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/products.js"></script>
+  </body>
+</html>
